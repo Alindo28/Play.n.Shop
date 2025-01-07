@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+p{
+    margin: 0;
+}
+
+#heading{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffea85;
+    height: 60px;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99;
+}
+
+#logoText{
+    height: 50px;
+    margin-top: 5px;
+
+}
+
+#logoSymbole{
+    height: 55px;
+}
+
+.menu{
+    position: absolute;
+    width: 40px;
+    left: 30px;
+    top: 10px;
+    background: none;
+    border: none;
+    padding: 8px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: background-color 0.20s;
+}
+.menu:hover{
+    background-color: rgba(128, 128, 128, 0.164);
+}
+.menuImg{
+    width: 100%;
+}
+
+#settings-bg{
+    z-index: 100;
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.300);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#settings{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: rgb(223, 226, 226);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.315);
+    animation-name: settingsAppear;
+    animation-duration: 0.25s;
+    animation-timing-function: linear;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes settingsAppear{
+    from{margin-left: -120px;}
+    to{margin-left: 0px;}
+}
+@keyframes settingsDisappear{
+    from{margin-left: 0px;}
+    to{margin-left: -120px;}
+}
+
+#profileSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#profilePic{
+    width: 70px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.5);
+}
+
+#profileName{
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+}
+
+#profileBalance{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#navigation{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#navigation button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(233, 233, 233);
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+#navigation button:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+#sections{
+    
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 60px;
+    left: 0;
+    right: 0;
+    column-gap: 1px;
+    margin: 0 2.5vw;
+    z-index: 98;
+}
+
+.otherSec{
+    font-size: 20px;
+    background-color: rgb(245, 153, 33);
+    color: white;
+    height: 40px;
+    flex: 1;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.currentSec{
+    flex: 1;
+    height: 35px;
+    background-color: rgb(245, 170, 72);
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#shopSec{
+    border-bottom-left-radius: 15px;
+    text-decoration: none;
+}
+#gameSec{
+    border-bottom-right-radius: 15px;
+    text-decoration: none;
+}

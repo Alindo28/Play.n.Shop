@@ -1,0 +1,77 @@
+#gamesGrid{
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-bottom: 1000px;
+
+}
+
+.gameCard{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+    background-color: rgba(250, 201, 94, 0.096);
+    border: 3px solid rgba(126, 126, 126, 0.349);
+    border-radius: 5px;
+}
+
+.gameIcon{
+    height: 80px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+.gameName{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(133, 98, 30);
+}
+
+.playBut{
+    margin-right: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(241, 161, 12);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.playBut:hover{
+    background-color: rgba(241, 161, 12, 0.63);
+}
+
+#notice{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(250, 213, 6, 0.562);
+    color: rgba(0, 0, 0, 0.534);
+}
+#noticeText{
+    position: absolute;
+    font-size: 45px;
+    font-weight: bold;
+    animation-name: rightTOleft;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-wrap: nowrap;
+}
+@keyframes rightTOleft {
+    0%{left: 100%;}
+    100%{left: -50%;}
+}
